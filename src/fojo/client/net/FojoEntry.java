@@ -20,7 +20,6 @@ public class FojoEntry implements FojoRESTEntity {
 		this.description = description;
 	}
 
-	@Override
 	public String toJSON() throws JSONException {
 		JSONObject fojoAttrs = new JSONObject();
 		fojoAttrs.putOpt("user_id", this.userId);
@@ -37,36 +36,30 @@ public class FojoEntry implements FojoRESTEntity {
 		return obj.toString();
 	}
 
-	@Override
 	public void fromJSON(String jsonString) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void createRemote() {
 
 	}
 
-	@Override
 	public void updateRemote() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void deleteRemote() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void showRemote(int fojoEntryId) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void showAllRemote() {
 		// TODO Auto-generated method stub
 		
@@ -80,12 +73,10 @@ public class FojoEntry implements FojoRESTEntity {
 		return this.userId;
 	}
 
-	@Override
 	public String getRESTName() {
 		return "fojo_entries";
 	}
 
-	@Override
 	public int getId() {
 		return this.id;
 	}

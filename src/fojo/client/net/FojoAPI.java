@@ -52,7 +52,7 @@ public class FojoAPI {
         this.httpClient.addRequestInterceptor(new PreemptiveAuth(), 0);
 	}
 	
-	public FojoAPI getInstance() {
+	public static FojoAPI getInstance() {
 		if (FojoAPI.singletonInstance ==null) {
 			FojoAPI.singletonInstance = new FojoAPI();
 		}
